@@ -1,0 +1,31 @@
+.navbar{
+    background-color: #faebd7;
+    border-radius: 5px;
+    margin: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10px 20px;
+}
+.items{
+    display: none;
+}
+.active{
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+.unorderedlist{
+    list-style: none;
+
+}
+.unorderedlist li a{
+    text-decoration: none;
+    padding-left: 20px;
+    color: #000;
+    
+}
+.hamburger{
+    cursor: pointer;
+}
