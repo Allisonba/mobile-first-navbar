@@ -1,12 +1,14 @@
 .navbar{
-    background-color: #faebd7;
+    background-color: #f4e8d8;
     border-radius: 5px;
     margin: 15px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 10px 20px;
+    padding: 15px 45px;
+    text-align: center;
+    font-size: 1.2rem;
 }
 .items{
     display: none;
@@ -14,18 +16,40 @@
 .active{
     display: block;
     width: 100%;
-    text-align: center;
 }
 .unorderedlist{
     list-style: none;
 
 }
+.unorderedlist li{
+    padding-top: 15px;
+    text-align: center;
+}
 .unorderedlist li a{
     text-decoration: none;
-    padding-left: 20px;
     color: #000;
-    
 }
 .hamburger{
     cursor: pointer;
+}
+
+
+
+@media screen and (min-width:850px) {
+    .hamburger{
+        display: none;
+    }
+    .items{
+        display: flex;
+    }
+    .unorderedlist{
+        display: flex;
+    }
+    .unorderedlist li{
+    margin-left: 10px;
+     padding: 0px 20px;
+     border-radius: 5px;
+
+    }
+    
 }

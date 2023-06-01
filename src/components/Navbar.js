@@ -1,7 +1,9 @@
 import React from 'react'
-import {FaBars} from "react-icons/fa"
 import { NavLink } from 'react-router-dom'
 import { useState } from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
+
 
 const Navbar = () => {
     const [togglestate, togglestateFunc] = useState(false)
@@ -17,7 +19,7 @@ const Navbar = () => {
         </div>
 
         <div className='hamburger'>
-        <FaBars onClick={handletoggle}/>
+        <FontAwesomeIcon icon={togglestate ? faTimes : faBars} onClick={handletoggle} className='icons' />
         </div>
 
         <div className={`items ${togglestate && "active"}`}>
